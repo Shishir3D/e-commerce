@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            /* background-color: red; */
+            background-image: url('../assets/background-home.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+
+        .row-homeresearch {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            height: 2500px;
+
+
+        }
+
+        .col-navigate {
+            font-size: 20px;
+            line-height: 130px;
+            position: relative;
+            z-index: 200;
+            width: 380px;
+
+
+        }
+
+        .col-navigate .not-move {
+            position: sticky;
+            left: 0px;
+            top: 120px;
+            background-color: white;
+            color: black;
+            padding: 10px 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+
+        .col-navigate .not-move p:hover {
+            text-decoration: underline;
+            /* transform: scale(1.2); */
+            cursor: pointer;
+            color: #db4444;
+
+        }
+
+        .box-1 {
+            transform: translateY(150%);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.7s all ease-in-out;
+
+        }
+
+        .box-2 {
+            transform: translateY(150%);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.7s all ease-in-out;
+
+        }
+
+        .box-3 {
+            transform: translateY(150%);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.7s all ease-in-out;
+
+        }
+
+        .box-4 {
+            transform: translateY(150%);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.7s all ease-in-out;
+
+        }
+
+        .col-image {
+            position: sticky;
+            right: 0px;
+            top: 0px;
+
+        }
+
+        .col-image .fix-image {
+            /* position: sticky;
+            right: 0px;
+            top: -130px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+
+        <div class="top-row">
+            <div class="top-col-1">
+                <p class="top-text">Winter Sale For ALL Printers And Free Express Delivery-OFF 30% !</p>
+
+            </div>
+            <div class="top-col-2">
+                <a class="top-link  " href="product.html">
+                    ShopNow
+                </a>
+
+            </div>
+            <div class="cross">
+                <img style="filter: invert() ; width: 20px; background-color: transparent;"
+                    src="../assets/icons/cancel.png" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+    <header class="header-default" style="">
+        <div class="container">
+            <div class="header-row">
+                <div class="logo">
+                    <a href="./product.html" style="">Print<span style="color:#db4444;">Shop</span></a> <sup
+                        style="margin-bottom: 50px;  font-size: 9px;border: 1px solid ;padding: 1px 2px; border-radius: 100%;font-weight: bolder;color: black;">NP</sup>
+
+                </div>
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class="nav_item "><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav_item "><a href="./product.html" class="nav-link">Product</a></li>
+                        <li class="nav_item"><a href="./Research.html" class="nav-link">Research</a></li>
+                        <li class="nav_item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav_item"><a href="./Aboutus.html" class="nav-link">About Us</a></li>
+                    </ul>
+                    </ul>
+
+
+                </div>
+                <div class="icons">
+
+
+
+
+                    <a style="display: flex; align-items: center;gap: 6px;" class="icons_has_children"
+                        href="login.html">
+                        <i style="font-style:normal;font-size: 17px;">Login</i>
+                        <span><img style="width: 15px; " src="../assets/icons/logout.png" alt=""></span>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <div style="display: flex;justify-content: space-between;padding: 100px 0px;">
+            <div class="text-left">
+
+                <h1 style="color: white;width: 490px;">Development <span style="color:rgb(0, 0, 0) ;">Of Blog
+                        Page</span> </h1>
+                <span style="color: rgba(255, 255, 255, 0.735);font-size: 20px;">-Research Through Out The Development
+                    Of Blog Page</span>
+
+            </div>
+            <div class="text-right">
+                <img style="width: 200px;border-radius: 0px 0px 100px 100px" src="../assets/programmer.gif" alt="">
+
+            </div>
+        </div>
+
+
+    </div>
+    <h1 style="font-size: 50px;text-align: center;margin-top: 200px;"><span style="color: #db4444;">Blog</span> Page
+    </h1>
+
+    <div style="background-color: white;padding: 50px 60px;margin-top: 80px;padding-bottom: 250px;">
+        <div class="container">
+            <div class="row-homeresearch">
+                <div class="col-navigate">
+                    <table class="not-move">
+                        <tr>
+                            <th style="transform: translateX(-20px);">s.n</th>
+                            <th style="text-align: start;">content</th>
+
+                        </tr>
+
+                        <tr>
+                            <td style="width: 60px;">1</td>
+                            <td class="home">
+                                <p>Our Blog Page</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="width: 60px;">2</td>
+                            <td>
+                                <p class="reference">Reference Page</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;">3</td>
+                            <td>
+                                <p class="similarity" style="line-height: 25px;">Similarities In Pages</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;">4</td>
+                            <td>
+                                <p class="differences" style="line-height: 25px;">Differences In Pages</p>
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+                <div class="col-content">
+                    <div class="box-1" style="margin-bottom: 50px;">
+                        <h1 style="color: #db4444;font-size: 40px;margin-bottom: 20px;">Our Blog page:</h1>
+                        <p style="width: 500px;text-align: justify;">"The blog page begins with an introduction to
+                            technology and then goes on to cover the most recent developments in printer technology. An
+                            discussion of printer advancements their positive and negative effects, the impact on
+                            technology and business, and a conclusion.
+                            The blog can be opened from the home page or any page from the navigation bar.
+                            The blog section navigation bar is located at the top. The blog page's title appears below
+                            the navigation bar.. Additionally, the blog's information and pictures are organized in
+                            separate sections below. The blog is structured to provide a general overview of the
+                            technology, followed by the explored topic. The final section of the blog includes a summary
+                            of the entire post, as well as effects of technology on daily life and printer business.
+                            There is a footer at the end of the page just as on other pages."</p>
+                    </div>
+                    <div class="box-2" style="margin-bottom: 50px;">
+                        <h1 style="color: #db4444;font-size: 40px;margin-bottom: 20px;">Reference page:</h1>
+                        <div style="width: 500px;object-fit: contain; margin: 20px;">
+                            <img style="object-fit: contain;width: 100%;" src="../assets/research/blog page reference 1.png"
+                                alt="">
+
+                        </div>
+                        <p style="width: 500px;text-align: justify;">"When first visiting the minimilist baker’s blog
+                            page., a pop-up appears. There is a search bar on top of the webpage. There is links to the
+                            social media pages of te minimilist baker to the right side of the search bar. Right below
+                            the top bar, there is the name of the website in bold and with cool style. To the left and
+                            right sidle of the title of the website, there are links to different webpages in the
+                            websites. Right below the title, there is a another title lnamed “recipies”. Below the
+                            “recepies” title, there are cards with images of the food items. When cliked it redirects
+                            the user to another site with full recipe of that dish"</p>
+                    </div>
+                    <div class="box-3" style="margin-bottom: 50px;">
+                        <h1 style="color: #db4444;font-size: 40px;margin-bottom: 20px; width: 500px;">Similarities
+                            Between The Pages:</h1>
+                        <p style="width: 500px;text-align: justify;">"The minimalist Baker and Print Shop's blog pages
+                            both incorporate cards with images, providing a visual representation of the blog content.
+                            Clicking on these cards redirects users to the respective blog sites with detailed content."
+                        </p>
+                        <div style="display: flex;align-items: center;gap: 20px;margin: 20px 0px;">
+                            <img style="width: 250px;" src="../assets/research/blog card printshop.png" alt="">
+                            <img style="width: 250px;" src="../assets/research/blog card reference.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box-4" style="margin-bottom: 50px;">
+                        <h1 style="color: #db4444;font-size: 40px;margin-bottom: 20px; width: 500px;">Differences
+                            Between The Pages:</h1>
+                        <p style="width: 500px;text-align: justify;">"While the blog page of Minimalist Baker features
+                            only the title below the images to convey the content of each blog, Print Shop's blog page
+                            provides additional concise information about the blogs alongside the images "</p>
+                            <div style="display: flex;align-items: center;gap: 20px;margin: 20px 0px;">
+                                <img style="width: 250px;" src="../assets/research/loginpage.png" alt="">
+                                <img style="width: 250px;" src="../assets/research/github login.png" alt="">
+                            </div>
+                    </div>
+
+                </div>
+                <div style="width: 230px;" class="col-image">
+                    <div class="fix-image">
+                        <img style="width: 440px;" src="../assets/research/blog reference page 2.png" alt="">
+                        <img style="width: 440px;" src="../assets/research/blog page.png" alt="">
+                        <img style="width: 440px;" src="../assets/research/blog reference page 2.png" alt="">
+                        <img style="width: 440px;" src="../assets/research/blog page.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer style="">
+        <div class="container">
+            <div class="footer-row">
+                <div class="col">
+
+                    <a style="color: white;font-size: 30px;" href="#">Print<span style="color:#db4444;">Shop</span></a>
+                    <sup
+                        style="margin-bottom: 50px;  font-size: 9px;border: 1px solid white;padding: 1px 2px; border-radius: 100%;font-weight: bolder;">NP</sup>
+
+
+                    <h3>Subscribe</h3>
+                    <p>Get 10% off your first order </p>
+                </div>
+                <div class="col">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>printshop@gmail.com</li>
+                        <li>+80015-8888-9999</li>
+                    </ul>
+
+                </div>
+                <div class="col">
+                    <h2>Account</h2>
+                    <ul>
+                        <li>My Account</li>
+                        <li>Login/Register</li>
+                        <li>Cart</li>
+                        <li>Wishlist</li>
+                        <li>Shop</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Quick Link</h2>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms Of Use</li>
+                        <li>FAQ</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Follow us</h2>
+                    <div style="display: flex;justify-content: start;align-items: center;gap: 10px;color: white;"
+                        class="icon">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <Script>
+        const topBar = document.querySelector(".top");
+        const cross = document.querySelector(".cross");
+
+        cross.addEventListener("click", function () {
+            topBar.style.display = "none";
+        });
+        window.addEventListener("scroll", function () {
+            let headerBar = document.querySelector("header");
+            let slidedown = document.querySelector(".slide-down-navbar");
+
+            let scrollY = window.scrollY || window.pageYOffset;
+            if (scrollY > 200) {
+                headerBar.classList.add("slide-down-navbar");
+                headerBar.classList.remove("header-default");
+            } else {
+                headerBar.classList.remove("slide-down-navbar");
+                headerBar.classList.add("header-default");
+            }
+        });
+
+        window.addEventListener("scroll", function () {
+
+
+            const boxOne = document.querySelector(".box-1")
+            const boxTwo = document.querySelector(".box-2")
+            const boxThree = document.querySelector(".box-3")
+            const boxFour = document.querySelector(".box-4")
+
+
+            if (scrollY > 300) {
+                boxOne.style.transform = "translateY(0px)"
+                boxOne.style.visibility = "visible"
+                boxOne.style.opacity = "1"
+
+
+
+
+            }
+            else {
+                boxOne.style.transform = "translateY(150%)"
+                boxOne.style.visibility = "hidden"
+                boxOne.style.opacity = "0"
+
+
+
+            }
+            if (scrollY > 900) {
+                boxTwo.style.transform = "translateY(0px)"
+                boxTwo.style.visibility = "visible"
+                boxTwo.style.opacity = "1"
+
+
+
+
+            }
+            else {
+                boxTwo.style.transform = "translateY(150%)"
+                boxTwo.style.visibility = "hidden"
+                boxTwo.style.opacity = "0"
+
+
+            }
+            if (scrollY > 1500) {
+                boxThree.style.transform = "translateX(0px)"
+                boxThree.style.visibility = "visible"
+                boxThree.style.opacity = "1"
+
+
+
+
+
+            }
+            else {
+                boxThree.style.transform = "translateY(150%)"
+                boxThree.style.visibility = "hidden"
+                boxThree.style.opacity = "0"
+            }
+            if (scrollY > 2100) {
+                boxFour.style.transform = "translateX(0px)"
+                boxFour.style.visibility = "visible"
+                boxFour.style.opacity = "1"
+            }
+            else {
+                boxFour.style.transform = "translateY(150%)"
+                boxFour.style.visibility = "hidden"
+                boxFour.style.opacity = "0"
+            }
+        })
+
+
+        const Home = document.querySelector(".home");
+        const Reference = document.querySelector(".reference");
+        const Similarities = document.querySelector(".similarity");
+        const Differences = document.querySelector(".differences")
+
+        Home.addEventListener("click", function () {
+            window.scrollTo({
+                top: 400,
+                behavior: "smooth",
+            });
+        })
+
+
+        Reference.addEventListener("click", function () {
+            window.scrollTo({
+                top: 1300,
+                behavior: "smooth",
+            });
+        })
+        Similarities.addEventListener("click", function () {
+            window.scrollTo({
+                top: 2100,
+                behavior: "smooth",
+            });
+        })
+        Differences.addEventListener("click", function () {
+            window.scrollTo({
+                top: 2500,
+                behavior: "smooth",
+            });
+        })
+
+
+
+
+
+
+    </Script>
+</body>
+
+</html>

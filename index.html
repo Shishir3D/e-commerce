@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head for index  -->
+<head>
+    <title>Home Page</title>
+<!-- External links for fonts and icons  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- External links for fonts and icons ends  -->
+
+<!-- internal css for index page -->
+    <style>
+        body {
+            
+            background-image: url('./assets/background-home.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 75vh;
+        }
+
+        .header-default .header-row .nav>ul>li .nav-link {
+            color: white;
+            font-weight: 400;
+            transition: 0.4s all;
+            position: relative;
+        }
+
+        .header-default .header-row .nav>ul>li>a:hover::before {
+            color: var(--colo-primary);
+            width: 50%;
+            transform: scale(1, 1);
+        }
+
+        .header-default .header-row .nav>ul>li>a:hover::after {
+            color: var(--colo-primary);
+            width: 50%;
+            transform: scale(1, 1);
+        }
+
+        .header-default .header-row .nav>ul>li>a::before {
+            position: absolute;
+            content: "";
+            bottom: -1px;
+            right: 50%;
+            width: 0%;
+            height: 3px;
+            background-color: white;
+            transition: 0.5s all;
+
+            transform: scale(0, 1);
+        }
+
+        .header-default .header-row .nav>ul>li>a::after {
+            position: absolute;
+            content: "";
+            bottom: -1px;
+            left: 50%;
+            width: 0%;
+            height: 3px;
+            background-color: white;
+            transition: 0.5s all;
+
+            transform: scale(0, 1);
+        }
+
+        .header-default .header-row .icons a {
+            font-size: 20px;
+            transition: 0.3s all;
+            color: #ffffff;
+        }
+
+        .header-default .header-row .icons a:hover {
+            color: white;
+        }
+
+        .header-default {
+            background-color: transparent;
+            box-shadow: none;
+            z-index: 200;
+
+
+            background-color: #D72929;
+        }
+
+        .text-right .get-started {
+            background-color: #db4444;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+
+
+
+        }
+
+        .content-head-home {
+            margin-top: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+
+        }
+
+        .text-right .get-started:hover {
+            border: 2px solid black;
+            color: black;
+
+        }
+
+        .text-right .get-started:hover img {
+            filter: none;
+        }
+
+        .text-right .get-started img {
+            filter: invert();
+
+        }
+
+        .text-right {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cart-gif {
+            animation-name: move;
+            animation-duration: 1.4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes move {
+            0% {
+                right: 0px;
+            }
+
+            100% {
+                right: 380px;
+            }
+        }
+
+        .our-goal {
+            position: absolute;
+          
+            left: 42%;
+            top: 100%;
+            z-index: -5;
+            transition: 0.5s all ease-in-out;
+            transform: scale(5);
+
+        }
+
+        .article-1 {
+            transform: translateX(-130%);
+
+            transition: 0.9s all ease-in-out
+        }
+
+        .article-2 {
+            transform: translateX(130%);
+
+            transition: 0.9s all ease-in-out
+        }
+
+        .article-3 {
+            transform: translateX(-130%);
+
+            transition: 0.9s all ease-in-out
+        }
+
+        .view-more-home {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .view-more-home a {
+            display: inline-block;
+            background-color: #db4444;
+            color: white;
+            padding: 15px 20px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        .view-more-home:hover a {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+        }
+        .team-title{
+            transform: translateX(-150%);
+            ;
+            transition: 0.9s all ease-in-out;
+        }
+        .suyog{
+            transform: translateX(-100%);
+            visibility: hidden;
+            transition: 0.9s all ease-in-out;
+            
+        }
+        .shishir{
+            transform: translateX(100%);
+            visibility: hidden;
+            transition: 0.9s all ease-in-out;
+            
+        }
+        .sam{
+            transform: translateX(-100%);
+            visibility: hidden;
+            transition: 0.9s all ease-in-out;
+            
+        }
+        .birendra{
+            transform: translateX(100%);
+            visibility: hidden;
+            transition: 0.9s all ease-in-out;
+            
+    }
+
+        /* home page css ends  */
+    </style>
+<!-- internal css for index page ends -->
+</head>
+<!-- head for index  -->
+
+<body>
+<!-- header section code starts  -->
+    <header class="header-default">
+        <div class="container">
+            <div class="header-row">
+                <div class="logo">
+                    <a href="index.html" style="color: white;">Print<span style="color:#ffffff;">Shop</span></a> <sup
+                        style="margin-bottom: 50px;  font-size: 9px;border: 1px solid ;padding: 1px 2px; border-radius: 100%;font-weight: bolder;color: white;">NP</sup>
+
+                </div>
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class="nav_item "><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav_item "><a href="./html/product.html" class="nav-link">Product</a></li>
+                        <li class="nav_item"><a href="./html/research.html" class="nav-link">Research</a></li>
+                        <li class="nav_item"><a href="./html/blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav_item"><a href="./html/Aboutus.html" class="nav-link">About Us</a></li>
+                    </ul>
+                    </ul>
+
+
+                </div>
+                <div class="icons">
+
+
+
+
+                    <a style="display: flex; align-items: center;gap: 6px;" class="icons_has_children"
+                        href="./html/login.html">
+                        <i style="font-style:normal;font-size: 17px;">Login</i>
+                        <span><img style="width: 15px; filter: invert();" src="./assets/icons/logout.png"
+                                alt=""></span>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+    </header>
+<!-- header section code ends   -->
+
+<!-- title section code starts  -->
+    <div class="container">
+        <div class="content-head-home">
+            <div class="text-left">
+                <h1 style="color: white;">Best <span style="color:black ;">Printers</span><br> Market Place In Nepal
+                </h1>
+            </div>
+            <div>
+                <h3 style="color: white;font-size: 50px;margin-bottom: 20px;">Buying <span
+                        style="font-size: 30px;">Printer?</span></h3>
+                <div style="background-color: #fffdfd;display: flex;align-items: center;border-radius: 10px;padding: 10px; gap: 10px;"
+                    class="text-right">
+                    <img style="width:70px;" src="./assets/printer gify.gif" alt="">
+                    <a class="get-started" href="./html/product.html">
+                        <p>Get Started</p> <img style="width: 30px;" src="./assets/icons/right-arrow.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+<!-- title section code ends  -->
+
+<!-- our goal text  -->
+    <div class="our-goal" style="transform: translateY(300px);margin: 60px 0px;text-align: center;font-size: 30px;">
+        <h1 style="color: #db4444;">OUR <span style="color: black;">GOAL</span></h1>
+    </div>
+<!-- our goal text  -->
+
+<!-- our goal content  -->
+    <div style="background-color: white;padding: 60px 0px;margin-top: 30%;">
+        <div class="container">
+            <div class="article-1"
+                style="display: flex;justify-content: flex-start; text-align: justify;margin-bottom: 20px; position: relative;">
+                <div>
+                    <h2 style="font-size: 60px;color: #db4444;">01 <span
+                            style="font-size: 25px;color: black;">/03</span>
+                    </h2>
+                    <h1 style="align-items: start;">Seamless Shopping Experience:</h1>
+                    <p style="width: 500px;">Welcome to ProShop, where your journey to a seamless printing experience
+                        begins. Discover a user-friendly online platform
+                        designed with you in mind. Our intuitive interface makes browsing through our diverse range of
+                        printers a breeze. Filter options,
+                        detailed product descriptions, and customer reviews empower you to make informed decisions.
+                        Experience the convenience of hassle-free
+                        shopping, from selection to checkout, as you find the perfect printer to meet your needs.</p>
+                </div>
+                <img class="cart-gif" style="position: absolute; width: 300px;right: 0px;bottom: 0px;"
+                    src="./assets/shopping-cart.gif" alt="">
+
+            </div>
+            <div class="article-2"
+                style="display: flex;justify-content: flex-end;margin-bottom:20px;position: relative;">
+                <div>
+                    <h2 style="font-size: 60px;color: #db4444;">02 <span
+                            style="font-size: 25px;color: black;">/03</span>
+                    </h2>
+                    <h1 style="width: 590px;">Exceptional UX for Personalized Printer Recommendations:</h1>
+                    <p style="width: 510px;text-align: justify;">
+                        Navigating the world of printers should be a delightful journey, not a daunting task. At [Your
+                        Company Name], we prioritize your user experience, redefining how you discover the ideal
+                        printer.
+                        Our sleek and intuitive interface, crafted with a user-centric design, ensures a seamless
+                        exploration of our printer collection.Say goodbye to information overload. Our UX-driven
+                        approach
+                        transforms the decision-making process into a personalized adventure.
+                    </p>
+                </div>
+                <img style="position: absolute; width: 300px;left: 0px;bottom: 0px;" src="./assets/rating.gif" alt="">
+
+            </div>
+            <div class="article-3"
+                style="display: flex;justify-content: flex-start; margin-bottom: 20px;position: relative;">
+                <div>
+                    <h2 style="font-size: 60px;color: #db4444;">03 <span
+                            style="font-size: 25px;color: black;">/03</span>
+                    </h2>
+                    <h1 style=" width: 500px;"> Stay Connected with Exclusive Offers and Updates:</h1>
+                    <p style="width: 500px;text-align: justify;">Welcome to ProShop, where your journey to a seamless
+                        printing experience
+                        begins. Discover a user-friendly online platform
+                        designed with you in mind. Our intuitive interface makes browsing through our diverse range of
+                        printers a breeze. Filter options,
+                        detailed product descriptions, and customer reviews empower you to make informed decisions.
+                        Experience the convenience of hassle-free
+                        shopping, from selection to checkout, as you find the perfect printer to meet your needs.</p>
+                </div>
+                <img style="position: absolute; width: 300px;right: 0px;bottom: 0px;" src="./assets/sales.gif" alt="">
+
+            </div>
+        </div>
+
+    </div>
+<!-- our goal content  -->
+
+<!-- our team description  -->
+    <div class="team">
+        <h1 class="team-title" style="font-size: 60px; text-align: center;margin: 50px 0px;">Meet <span
+                style="color: #db4444;">Our </span>Team </h1>
+        <div style=" margin-bottom: 50px;">
+            <div class="container">
+                <div class="intro">
+                    <div class="suyog" style="display: flex;gap: 40px;margin-bottom: 50px; ">
+                        <div>
+                            <img style="width: 200px;border-radius: 100%;" src="./assets/suyog.jpg" alt="">
+    
+                        </div>
+                        <div>
+                            <span>
+                                <h2>Suyog Bhattarai:</h2>
+                            </span>
+    
+                            <p style="text-align: justify; width: 500px;">"I am a Web developer with a diverse background in
+                                it .
+                                Proficient in Photoshop, Illustrator, Figma, HTML, CSS, and
+                                JavaScript. I can deliver exceptional development
+                                solutions that captivate audiences and elevate brand., My
+                                expertise extends to single page application development
+                                with react, api develpement , django rest framework,
+                                django templates,,state management using redux,
+                                authentication,pagination,search and filter. I actively
+                                analyze clients' needs foster open communication, and
+                                deliver projects on time and to the highest quality
+                                standards. I am always ready to work together to create
+                                impactful and visually stunning development works that
+                                leave a lasting impression."</p>
+                        </div>
+                    </div>
+                    <div class="shishir" style="display: flex;gap: 40px;justify-content: flex-end;margin-bottom: 50px; ">
+                        <div>
+                            <img style="width: 200px;border-radius: 100%;" src="./assets/aboutUs/shishir.png" alt="">
+    
+                        </div>
+                        <div>
+                            <span>
+                                <h2>Shishir Poudel:</h2>
+                            </span>
+    
+                            <p style="text-align: justify; width: 500px;">"I am a Web developer with a diverse background in
+                                it .
+                                Proficient in Photoshop, Illustrator, Figma, HTML, CSS, and
+                                JavaScript. I can deliver exceptional development
+                                solutions that captivate audiences and elevate brand., My
+                                expertise extends to single page application development
+                                with react, api develpement , django rest framework,
+                                django templates,,state management using redux,
+                                authentication,pagination,search and filter. I actively
+                                analyze clients' needs foster open communication, and
+                                deliver projects on time and to the highest quality
+                                standards. I am always ready to work together to create
+                                impactful and visually stunning development works that
+                                leave a lasting impression."</p>
+                        </div>
+                    </div>
+                    <div class="sam" style="display: flex;gap: 40px;margin-bottom: 50px; ">
+                        <div>
+                            <img style="width: 200px;border-radius: 100%;" src="./assets/aboutUs/sambridhi.jpg" alt="">
+    
+                        </div>
+                        <div>
+                            <span>
+                                <h2>Sambridhi Shrestha:</h2>
+                            </span>
+    
+                            <p style="text-align: justify; width: 500px;">"I am a Web developer with a diverse background in
+                                it .
+                                Proficient in Photoshop, Illustrator, Figma, HTML, CSS, and
+                                JavaScript. I can deliver exceptional development
+                                solutions that captivate audiences and elevate brand., My
+                                expertise extends to single page application development
+                                with react, api develpement , django rest framework,
+                                django templates,,state management using redux,
+                                authentication,pagination,search and filter. I actively
+                                analyze clients' needs foster open communication, and
+                                deliver projects on time and to the highest quality
+                                standards. I am always ready to work together to create
+                                impactful and visually stunning development works that
+                                leave a lasting impression."</p>
+                        </div>
+                    </div>
+                    <div class="birendra" style="display: flex;gap: 40px;justify-content: flex-end;margin-bottom: 50px; ">
+                        <div>
+                            <img style="width: 200px;border-radius: 100%;" src="./assets/aboutUs/Birendra.jpg" alt="">
+    
+                        </div>
+                        <div>
+                            <span>
+                                <h2>Birendra Bhandari:</h2>
+                            </span>
+    
+                            <p style="text-align: justify; width: 500px;">"I am Birendra Bhandari, 20 years old, born on March 24, 2004, in Mahendranagar, Kanchanpur. I come from a family of five. I completed my +2 in Science from Radiant Secondary School. My strengths include being a hardworking, quick learner, and self-motivated individual. My hobbies include playing football, badminton, listening to music, and reading books. My goal is to secure a job in a reputed company and attain a higher position within the same organization."</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+            <div class="view-more-home"><a href="./html/Aboutus.html">View More</a></div>
+        </div>
+
+    </div>
+<!-- our team description  -->
+   
+<!-- footer code starts  -->
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="col">
+
+                    <a style="color: white;font-size: 30px;" href="#">Print<span style="color:#db4444;">Shop</span></a>
+                    <sup
+                        style="margin-bottom: 50px;  font-size: 9px;border: 1px solid white;padding: 1px 2px; border-radius: 100%;font-weight: bolder;">NP</sup>
+
+
+                    <h3>Subscribe</h3>
+                    <p>Get 10% off your first order </p>
+                </div>
+                <div class="col">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>printshop@gmail.com</li>
+                        <li>+80015-8888-9999</li>
+                    </ul>
+
+                </div>
+                <div class="col">
+                    <h2>Account</h2>
+                    <ul>
+                        <li>My Account</li>
+                        <li>Login/Register</li>
+                        <li>Cart</li>
+                        <li>Wishlist</li>
+                        <li>Shop</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Quick Link</h2>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms Of Use</li>
+                        <li>FAQ</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Follow us</h2>
+                    <div style="display: flex;justify-content: start;align-items: center;gap: 10px;color: white;"
+                        class="icon">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+<!-- footer code ends  -->
+
+<!-- javascript for index page starts  -->
+    <Script>
+        window.addEventListener("scroll", function () {
+            let headerBar = document.querySelector("header");
+            let slidedown = document.querySelector(".slide-down-navbar");
+
+
+            let scrollY = window.scrollY || window.pageYOffset;
+            if (scrollY > 750) {
+                headerBar.classList.add("slide-down-navbar");
+                slidedown.style.position = "fixed"
+                slidedown.style.top = "0px"
+                headerBar.classList.remove("header-default");
+            } else {
+                headerBar.classList.remove("slide-down-navbar");
+                headerBar.classList.add("header-default");
+                slidedown.style.position = "sticky"
+                slidedown.style.top = "0px"
+            }
+        });
+
+        window.addEventListener("scroll", function () {
+            let ourGoal = document.querySelector(".our-goal")
+            if (scrollY > 150) {
+                ourGoal.style.top = "65%";
+            }
+
+            else {
+                ourGoal.style.top = "100%";
+                ourGoal.style.position = "none"
+            }
+        })
+        window.addEventListener("scroll", function () {
+            const articleOne = document.querySelector(".article-1")
+            const articleTwo = document.querySelector(".article-2")
+            const articleThree = document.querySelector(".article-3")
+            const Team = document.querySelector(".team-title")
+            const Suyog = document.querySelector(".suyog")
+            const Shishir = document.querySelector(".shishir")
+            const Sam = document.querySelector(".sam")
+            const Biru = document.querySelector(".birendra")
+            if (scrollY > 380) {
+
+                articleOne.style.transform = "translateX(0px)"
+
+            }
+            else {
+                articleOne.style.transform = "translateX(-130%)"
+
+
+            }
+            if (scrollY > 750) {
+                articleTwo.style.transform = "translateX(0px)"
+
+
+            }
+            else {
+                articleTwo.style.transform = "translateX(130%)"
+
+
+            }
+            if (scrollY > 1050) {
+                articleThree.style.transform = "translateX(0px)"
+
+
+            }
+            else {
+                articleThree.style.transform = "translateX(-130%)"
+
+
+            }
+            if (scrollY > 1500) {
+                Team.style.transform = "translateX(0px)"
+
+
+            }
+            else {
+                Team.style.transform = "translateX(-70%)"
+
+
+            }
+            if (scrollY > 1900) {
+                Suyog.style.transform = "translateX(0px)"
+                Suyog.style.visibility = "visible"
+                Shishir.style.transform = "translateX(0px)"
+                Shishir.style.visibility = "visible"
+                
+
+
+            }
+            else {
+                Suyog.style.transform = "translateX(-100%)"
+                Suyog.style.visibility = "hidden"
+                Shishir.style.transform = "translateX(100%)"
+                Shishir.style.visibility = "hidden"
+
+
+            }
+            if (scrollY > 2400) {
+                Sam.style.transform = "translateX(0px)"
+                Sam.style.visibility = "visible"
+                Biru.style.transform = "translateX(0px)"
+                Biru.style.visibility = "visible"
+            }
+            else {
+                Sam.style.transform = "translateX(-100%)"
+                Sam.style.visibility = "hidden"
+                Biru.style.transform = "translateX(100%)"
+                Biru.style.visibility = "hidden"
+
+
+            }
+        })
+
+    </Script>
+<!-- javascript for index page ends  -->
+
+</body>
+</html>

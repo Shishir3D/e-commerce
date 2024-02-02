@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+        .pop-up {
+
+            background-color: black;
+            width: 400px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: -80%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            border-radius: 10px;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+            transition: 0.5s all ease-in-out;
+
+
+        }
+
+        .popup-button {
+            background-color: white;
+            color: black;
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+
+
+    <header style="position: sticky;top: 0px;" class="header-default">
+        <div class="container">
+            <div class="header-row">
+                <div class="logo">
+                    <a href="./product.html">Print<span style="color:#db4444;">Shop</span></a> <sup
+                        style="margin-bottom: 50px;  font-size: 9px;border: 1px solid ;padding: 1px 2px; border-radius: 100%;font-weight: bolder;">NP</sup>
+
+                </div>
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class="nav_item "><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav_item "><a href="./product.html" class="nav-link">product</a></li>
+                       
+                        <li class="nav_item"><a href="./Research.html" class="nav-link">Research</a></li>
+                        <li class="nav_item"><a href="./blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav_item"><a href="./Aboutus.html" class="nav-link">About Us</a></li>
+                    </ul>
+                    </ul>
+
+
+                </div>
+                <div class="icons">
+                  
+
+
+
+                    <a style="display: flex; align-items: center;gap: 6px;" class="icons_has_children"
+                        href="login.html">
+                        <i style="font-style:normal;font-size: 17px;">Login</i>
+                        <span><img style="width: 15px;" src="../assets/icons/logout.png" alt=""></span>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <!-- details start  -->
+    <div class="container">
+        <div class="detail-row">
+            <div class="detail-image">
+                <div class="detail-image-col1">
+                    <img src="../assets/printer3.png" alt="">
+                    <img src="../assets/printer5.jpg" alt="">
+                    <img src="../assets/printer7.png" alt="">
+                    <img src="../assets/printer4.png" alt="">
+
+                </div>
+                <div class="detail-image-col2">
+                    <img src="../assets/printer3.png" alt="">
+                </div>
+
+            </div>
+            <div class="detail">
+                <h3>HP OfficeJet Pro 9015</h3>
+                <div class="rating">
+                    <div class="star">
+                        <img src="../assets/icons/star.png" alt="">
+                        <img src="../assets/icons/star.png" alt="">
+                        <img src="../assets/icons/star.png" alt="">
+                        <img src="../assets/icons/star.png" alt="">
+                    </div>
+                    <p>(150 reviews)</p>
+                    <span>|</span>
+                    <p>In Stock</p>
+                </div>
+                <p style="  margin-bottom: 10px;">Rs:50000</p>
+                <p class="description">The HP OfficeJet Pro 9015 XP-7100 is an all-in-one inkjet printer designed to
+                    cater to various printing, scanning, and copying needs, particularly for home or small office use
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p>Colours: Black White</p>
+                <br>
+                <div class="buy-section">
+                    <div class="place-order-btn" onclick="togglePopup()">
+                        <a>Place Order</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- details ends  -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="col">
+
+                    <a style="color: white;font-size: 30px;" href="#">Print<span style="color:#db4444;">Shop</span></a>
+                    <sup
+                        style="margin-bottom: 50px;  font-size: 9px;border: 1px solid white;padding: 1px 2px; border-radius: 100%;font-weight: bolder;">NP</sup>
+
+
+                    <h3>Subscribe</h3>
+                    <p>Get 10% off your first order </p>
+                </div>
+                <div class="col">
+                    <h2>Support</h2>
+                    <ul>
+                        <li>printshop@gmail.com</li>
+                        <li>+80015-8888-9999</li>
+                    </ul>
+
+                </div>
+                <div class="col">
+                    <h2>Account</h2>
+                    <ul>
+                        <li>My Account</li>
+                        <li>Login/Register</li>
+                        <li>Cart</li>
+                        <li>Wishlist</li>
+                        <li>Shop</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Quick Link</h2>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms Of Use</li>
+                        <li>FAQ</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Follow us</h2>
+                    <div style="display: flex;justify-content: start;align-items: center;gap: 10px;color: white;"
+                        class="icon">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Code by sam -->
+
+
+        <div class="pop-up">
+            <div class="popup-text">
+                <span class="popup-text-line">Your order has been sucessfully placed</span>
+            </div>
+
+            <div class="popup-button" id="popup-button" onclick="togglePopupOff()">
+                <span>OK</span>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <script>
+        var popUpContianer = document.querySelector(".pop-up");
+        var Body = document.querySelector(".detail-row");
+        function togglePopup() {
+
+            popUpContianer.style.visibility = "visible";
+            popUpContianer.style.opacity = "1";
+            Body.style.filter = "blur(10px)"
+        }
+        function togglePopupOff() {
+
+
+            popUpContianer.style.visibility = "hidden";
+            popUpContianer.style.opacity = "0";
+            Body.style.filter = "blur(0px)"
+        }
+    </script>
+</body>
+
+</html>
